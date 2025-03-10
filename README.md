@@ -1,1 +1,10 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/HlESjNib)
+class Solution {
+public:
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+        for (int j = 0, i = m; j<n; j++){
+            nums1[i] = nums2[j];
+            i++;
+        }
+        sort(nums1.begin(),nums1.end());
+    }
+};
